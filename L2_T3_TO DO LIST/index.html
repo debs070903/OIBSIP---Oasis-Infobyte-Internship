@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/jpeg" href="Favicon.jpg">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>To Do List</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          class="todo-input"
+          placeholder="Enter your task..."
+        />
+        <button class="add-button">
+          <i class="fa fa-plus-circle"></i>
+        </button>
+      </div>
+      <div class="filters">
+        <div class="filter" data-filter="completed">Completed</div>
+        <div class="filter" data-filter="pending">Pending</div>
+        <div class="delete-all">Delete All</div>
+      </div>
+      <div class="todos-container">
+        <ul class="todos"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

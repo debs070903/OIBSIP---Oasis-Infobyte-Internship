@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css"
+      integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="input-area" placeholder="0">
+        </div>
+        <div class="keys-container">
+            <div class="row">
+              <button id="spl" onclick="clearAll()">AC</button>
+              <button id="spl" onclick="clearLast()">CE</button>
+              <button id="splops" onclick="sin()">sin</button>
+              <button id="splops" onclick="cos()">cos</button>
+              <button id="splops" onclick="tan()">tan</button>
+              <button id="splops" onclick="log()">log</button>
+            </div>
+            <div class="row">
+              <button class="btn">1</button>
+              <button class="btn">2</button>
+              <button class="btn">3</button>
+              <button id="splops" onclick="sqrt()">√</button>
+              <button id="splops" onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em; font-size: small;">2</button>
+              <button id="splops" onclick="fact()">x!</button>
+            </div>
+            <div class="row">
+              <button class="btn">4</button>
+              <button class="btn">5</button>
+              <button class="btn">6</button>
+              <button class="btn" id="bops">+</button>
+              <button class="btn" id="bops">-</button>
+              <button class="btn" id="bops">÷</button>
+            </div>
+            <div class="row">
+              <button class="btn">7</button>
+              <button class="btn">8</button>
+              <button class="btn">9</button>
+              <button id="spl" onclick="pi()">π</button>
+              <button id="spl" onclick="e()">e</button>
+              <button class="btn" id="bops">x</button>
+            </div>
+            <div class="row">
+              <button class="btn" id="spl">(</button>
+              <button class="btn" id="spl">)</button>
+              <button class="btn">0</button>
+              <button class="btn" id="spl">.</button>
+              <button id="equals" onclick="screen.value=eval(screen.value);">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
